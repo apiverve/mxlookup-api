@@ -1,32 +1,36 @@
 openapi: 3.0.4
 info:
   title: MX Lookup
-  description: MX Lookup is a simple tool for getting MX records for a domain. It returns the MX records for the given domain.
+  description: >-
+    MX Lookup is a simple tool for getting MX records for a domain. It returns
+    the MX records for the given domain.
   termsOfService: https://apiverve.com/terms/
   contact:
     name: APIVerve Support
     email: hello@apiverve.com
     url: https://apiverve.com/contact
-  version: 1.0.9
+  version: 1.0.0
 externalDocs:
   description: Learn more about APIVerve
   url: https://docs.apiverve.com?utm_source=openapi
 servers:
-- url: https://api.apiverve.com/
+  - url: https://api.apiverve.com/
 paths:
   /v1/mxlookup:
     get:
       summary: Get MX Records
-      description: MX Lookup is a simple tool for getting MX records for a domain. It returns the MX records for the given domain.
+      description: >-
+        MX Lookup is a simple tool for getting MX records for a domain. It
+        returns the MX records for the given domain.
       operationId: mxlookup
       parameters:
-      - name: domain
-        in: query
-        schema:
-          type: string
-        required: true
-        description: The domain you want to get the MX records for (e.g. yahoo.com)
-        example: yahoo.com
+        - name: domain
+          in: query
+          schema:
+            type: string
+          required: true
+          description: The domain you want to get the MX records for (e.g. yahoo.com)
+          example: yahoo.com
       responses:
         '200':
           description: Successful Response
@@ -42,26 +46,26 @@ paths:
                     type: string
                     description: error
                   data:
-                    type: string
+                    type: object
                     description: data
               example:
                 status: ok
-                error: 
+                error: null
                 data:
                   domain: yahoo.com
                   mx:
-                  - priority: 1
-                    exchange: mta5.am0.yahoodns.net
-                  - priority: 1
-                    exchange: mta6.am0.yahoodns.net
-                  - priority: 1
-                    exchange: mta7.am0.yahoodns.net
+                    - priority: 1
+                      exchange: mta7.am0.yahoodns.net
+                    - priority: 1
+                      exchange: mta6.am0.yahoodns.net
+                    - priority: 1
+                      exchange: mta5.am0.yahoodns.net
         '401':
           description: Your request was not authorized, or your API Key was invalid
         '404':
           description: Requested resource was not found
         '500':
-          description: A server error has occured, try again later
+          description: A server error has occurred, try again later
 components:
   securitySchemes:
     api_key:
@@ -69,4 +73,4 @@ components:
       name: x-api-key
       in: header
 security:
-- api_key: []
+  - api_key: []
