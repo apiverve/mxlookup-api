@@ -12,7 +12,6 @@ namespace APIVerve.API.MXLookup
     {
         /// <summary>
         /// The domain you want to get the MX records for (e.g. yahoo.com)
-        /// Example: yahoo.com
         /// </summary>
         [JsonProperty("domain")]
         public string Domain { get; set; }
