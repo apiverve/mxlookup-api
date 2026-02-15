@@ -10,20 +10,14 @@ if os.path.exists(requirements_file):
 
 setup(
     name='apiverve_mxlookup',
-    version='1.1.12',
+    version='1.1.13',
     packages=find_packages(),
     include_package_data=True,
     install_requires=install_requires,
     description='MX Lookup is a simple tool for getting MX records for a domain. It returns the MX records for the given domain.',
     author='APIVerve',
     author_email='hello@apiverve.com',
-    url='https://apiverve.com',
-    project_urls={
-        'Homepage': 'https://apiverve.com',
-        'Documentation': 'https://docs.apiverve.com/ref/mxlookup',
-        'Source': 'https://github.com/apiverve/mxlookup-api',
-        'Bug Tracker': 'https://github.com/apiverve/mxlookup-api/issues'
-    },
+    url='https://mxlookup.apiverve.com?utm_source=pypi&utm_medium=homepage',
     classifiers=[
         'Programming Language :: Python :: 3',
         'Operating System :: OS Independent',
