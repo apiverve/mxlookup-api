@@ -230,8 +230,9 @@ from apiverve_mxlookup.apiClient import MxlookupAPIClient
 
 api = MxlookupAPIClient("[YOUR_API_KEY]")
 
+query = { "domain": "yahoo.com" }
+
 try:
-    query = { "domain": "yahoo.com" }
     result = api.execute(query)
     print(result)
 finally:
