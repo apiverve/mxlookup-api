@@ -126,7 +126,7 @@ async function makeRequest() {
     "mx": [
       {
         "priority": 1,
-        "exchange": "mta5.am0.yahoodns.net"
+        "exchange": "mta7.am0.yahoodns.net"
       },
       {
         "priority": 1,
@@ -134,7 +134,7 @@ async function makeRequest() {
       },
       {
         "priority": 1,
-        "exchange": "mta7.am0.yahoodns.net"
+        "exchange": "mta5.am0.yahoodns.net"
       }
     ]
   }
