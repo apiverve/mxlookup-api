@@ -25,6 +25,9 @@ namespace APIVerve.API.MXLookup
 
         [JsonProperty("data")]
         public Data Data { get; set; }
+
+        [JsonProperty("premium")]
+        public Premium Premium { get; set; }
     }
 
     public partial class Data
@@ -39,9 +42,21 @@ namespace APIVerve.API.MXLookup
     public partial class Mx
     {
         [JsonProperty("priority")]
-        public long Priority { get; set; }
+        public long? Priority { get; set; }
 
         [JsonProperty("exchange")]
         public string Exchange { get; set; }
+    }
+
+    public partial class Premium
+    {
+        [JsonProperty("message")]
+        public string Message { get; set; }
+
+        [JsonProperty("upgrade_url")]
+        public Uri UpgradeUrl { get; set; }
+
+        [JsonProperty("locked_fields")]
+        public string[] LockedFields { get; set; }
     }
 }
