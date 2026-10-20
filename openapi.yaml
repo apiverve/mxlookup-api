@@ -2,8 +2,8 @@ openapi: 3.0.4
 info:
   title: MX Lookup
   description: >-
-    MX Lookup is a simple tool for getting MX records for a domain. It returns
-    the MX records for the given domain.
+    MX Lookup queries DNS to find MX records for any domain. It returns an array
+    of mail exchange hostnames and their priority routing values in real time.
   termsOfService: https://apiverve.com/terms/
   contact:
     name: APIVerve Support
@@ -18,7 +18,7 @@ servers:
 paths:
   /v1/mxlookup:
     get:
-      summary: Get MX Records
+      summary: MX Lookup
       description: >-
         MX Lookup is a simple tool for getting MX records for a domain. It
         returns the MX records for the given domain.
