@@ -4,6 +4,6 @@ require_relative "apiverve_mxlookup/client"
 
 module APIVerve
   module Mxlookup
-    VERSION = "1.2.2"
+    VERSION = "1.2.3"
   end
 end
