@@ -1,6 +1,6 @@
 {
   "name": "@apiverve/mxlookup",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "MX Lookup queries DNS to find MX records for any domain. It returns an array of mail exchange hostnames and their priority routing values in real time.",
   "main": "index.js",
   "types": "index.d.ts",
