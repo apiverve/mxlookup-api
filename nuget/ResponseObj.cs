@@ -37,6 +37,21 @@ namespace APIVerve.API.MXLookup
 
         [JsonProperty("mx")]
         public Mx[] Mx { get; set; }
+
+        [JsonProperty("acceptsMail")]
+        public bool? AcceptsMail { get; set; }
+
+        [JsonProperty("isNullMx")]
+        public bool? IsNullMx { get; set; }
+
+        [JsonProperty("provider")]
+        public string Provider { get; set; }
+
+        [JsonProperty("isSecurityGateway")]
+        public bool? IsSecurityGateway { get; set; }
+
+        [JsonProperty("ttl")]
+        public long? Ttl { get; set; }
     }
 
     public partial class Mx
@@ -46,6 +61,15 @@ namespace APIVerve.API.MXLookup
 
         [JsonProperty("exchange")]
         public string Exchange { get; set; }
+
+        [JsonProperty("ips")]
+        public string[] Ips { get; set; }
+
+        [JsonProperty("reverseDns")]
+        public string ReverseDns { get; set; }
+
+        [JsonProperty("reverseDnsConfirmed")]
+        public bool? ReverseDnsConfirmed { get; set; }
     }
 
     public partial class Premium

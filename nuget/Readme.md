@@ -370,17 +370,58 @@ using (var apiClient = new MXLookupAPIClient("[YOUR_API_KEY]"))
     "mx": [
       {
         "priority": 1,
-        "exchange": "mta7.am0.yahoodns.net"
+        "exchange": "mta6.am0.yahoodns.net",
+        "ips": [
+          "67.195.204.73",
+          "67.195.228.110",
+          "98.136.96.91",
+          "67.195.228.106",
+          "67.195.204.77",
+          "67.195.228.94",
+          "67.195.204.74",
+          "67.195.204.72"
+        ],
+        "reverseDns": "mtaproxy4.free.mail.vip.bf1.yahoo.com",
+        "reverseDnsConfirmed": true
       },
       {
         "priority": 1,
-        "exchange": "mta6.am0.yahoodns.net"
+        "exchange": "mta7.am0.yahoodns.net",
+        "ips": [
+          "67.195.204.72",
+          "98.136.96.74",
+          "67.195.204.74",
+          "98.136.96.91",
+          "67.195.204.73",
+          "98.136.96.76",
+          "67.195.228.110",
+          "67.195.228.94"
+        ],
+        "reverseDns": "mtaproxy3.free.mail.vip.bf1.yahoo.com",
+        "reverseDnsConfirmed": true
       },
       {
         "priority": 1,
-        "exchange": "mta5.am0.yahoodns.net"
+        "exchange": "mta5.am0.yahoodns.net",
+        "ips": [
+          "67.195.204.79",
+          "67.195.228.94",
+          "67.195.228.109",
+          "67.195.228.110",
+          "98.136.96.76",
+          "67.195.204.72",
+          "67.195.204.74",
+          "67.195.204.77"
+        ],
+        "reverseDns": "mtaproxy2.free.mail.vip.bf1.yahoo.com",
+        "reverseDnsConfirmed": true
       }
-    ]
+    ],
+    "acceptsMail": true,
+    "isNullMx": false,
+    "provider": "Yahoo",
+    "isSecurityGateway": false,
+    "ttl": 503
   }
 }
 ```
