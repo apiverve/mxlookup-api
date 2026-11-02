@@ -25,13 +25,21 @@ declare module '@apiverve/mxlookup' {
 
 
   interface MXLookupData {
-      domain: null | string;
-      mx:     MX[];
+      domain:            null | string;
+      mx:                MX[];
+      acceptsMail:       boolean | null;
+      isNullMX:          boolean | null;
+      provider:          null | string;
+      isSecurityGateway: boolean | null;
+      ttl:               number | null;
   }
   
   interface MX {
-      priority: number | null;
-      exchange: null | string;
+      priority:            number | null;
+      exchange:            null | string;
+      ips:                 (null | string)[];
+      reverseDNS:          null | string;
+      reverseDNSConfirmed: boolean | null;
   }
 
   export default class mxlookupWrapper {
